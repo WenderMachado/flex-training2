@@ -136,6 +136,6 @@ footer a:hover {
   }
 
   header.site-header a {
-    padding: 1rem 1.5rem; /* reduz o espaçamento para não “estourar” */
+    padding: 1rem 1.5rem;
   }
 }
