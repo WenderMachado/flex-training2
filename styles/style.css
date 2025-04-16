@@ -10,10 +10,12 @@
 html{
   font-size: 62.5%;
 }
-
-main{
-  background-image: url(/img/1.jpg);
+img{
+  max-width: 100%;
+  display: block;
+  z-index: -1;
 }
+
 header{
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +25,7 @@ header{
   gap: 2rem;
   padding: 2rem 0 ;
   margin: 0 auto;
+  background-color: #fff;
 }
 nav{
   display: flex;
@@ -44,4 +47,61 @@ a{
 
 h2{
   font-size: 6.4rem;
+  color: #fb5363;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+/* .bg-img{
+  position: relative;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(rgba(0,0,0,0.4));
+  
+} */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+              url('/img/1.jpg') no-repeat center center / cover;
+}
+.call-to-action{
+  display: flex;
+  gap: 2rem;
+}
+.call-to-action a{
+  background-color:#fb5363 ;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: #fff solid 2px;
+}
+
+footer{
+  display: flex;
+  justify-content: end;
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 6rem;
+
+}
+
+footer nav{
+  background-color: #000;
+}
+
+footer nav a {
+  color: white;
+  padding: 1rem;
+  font-size: 1.8rem;
 }
